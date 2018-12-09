@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="4dp">
+
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp">
+
+
+            <TextView
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:id="@+id/date_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Octobar ,2018"
+                android:textColor="#514B66"
+                android:textSize="12sp"
+
+
+                />
+
+            <ImageView
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/date_list"
+                android:id="@+id/person"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/date_list"
+                android:padding="5dp"
+                android:src="@drawable/ic_person" />
+
+            <TextView
+                app:layout_constraintStart_toEndOf="@id/person"
+                app:layout_constraintTop_toTopOf="@id/person"
+                app:layout_constraintBottom_toBottomOf="@id/person"
+                android:id="@+id/numberOfPersons"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/date_list"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/person"
+                android:padding="1dp"
+                android:text="25"
+                android:textColor="#514B66"
+                android:textSize="9sp" />
+
+            <ImageView
+
+                app:layout_constraintStart_toEndOf="@+id/numberOfPersons"
+                app:layout_constraintTop_toTopOf="@id/person"
+                app:layout_constraintBottom_toBottomOf="@+id/person"
+                android:id="@+id/gift"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/date_list"
+                android:layout_marginLeft="19dp"
+                android:layout_toRightOf="@+id/numberOfPersons"
+                android:padding="5dp"
+                android:src="@drawable/ic_gift"
+
+                />
+
+            <TextView
+                app:layout_constraintBottom_toBottomOf="@+id/gift"
+                app:layout_constraintTop_toTopOf="@+id/gift"
+                app:layout_constraintStart_toEndOf="@id/gift"
+                android:id="@+id/giftValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/date_list"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/gift"
+                android:padding="1dp"
+                android:text="10%"
+                android:textColor="#514B66"
+                android:textSize="9sp"/>
+
+            <ImageView
+                app:layout_constraintStart_toEndOf="@+id/giftValue"
+                app:layout_constraintTop_toTopOf="@+id/person"
+                app:layout_constraintBottom_toBottomOf="@+id/person"
+                android:id="@+id/gift1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/date_list"
+                android:layout_marginLeft="19dp"
+                android:layout_toRightOf="@+id/giftValue"
+                android:padding="5dp"
+                android:src="@drawable/ic_group_1469"
+
+                />
+
+            <TextView
+                app:layout_constraintStart_toEndOf="@+id/gift1"
+                app:layout_constraintTop_toTopOf="@+id/gift1"
+                app:layout_constraintBottom_toBottomOf="@+id/gift1"
+                android:id="@+id/giftValue1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/date_list"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/gift1"
+                android:padding="1dp"
+                android:text="10%"
+                android:textColor="#514B66"
+                android:textSize="9sp"/>
+
+            <TextView
+
+                android:id="@+id/Balance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="290dp"
+                android:layout_toRightOf="@+id/date_list"
+                android:padding="5dp"
+                android:text="2100"
+                android:textColor="#DC6951"
+                android:textSize="17sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                app:layout_constraintTop_toTopOf="@+id/Balance"
+                app:layout_constraintBottom_toBottomOf="@+id/Balance"
+                app:layout_constraintStart_toEndOf="@+id/Balance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/Balance"
+                android:layout_alignParentEnd="true"
+                android:padding="1dp"
+                android:text="LE"
+                android:textColor="#514B66"
+                android:textSize="10sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Balance"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@+id/giftValue1"
+            android:padding="1dp"
+            android:text="(2100)"
+            android:textColor="#514B66"
+            android:textSize="10sp"
+            app:layout_constraintTop_toBottomOf="@id/Balance"
+            app:layout_constraintStart_toStartOf="@id/Balance"
+            app:layout_constraintEnd_toEndOf="@id/Balance"
+             />
+
+
+    </android.support.constraint.ConstraintLayout>
+</android.support.v7.widget.CardView>
+
